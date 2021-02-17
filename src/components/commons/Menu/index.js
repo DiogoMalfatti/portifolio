@@ -1,7 +1,8 @@
 import React from 'react';
 import { MenuWrapper } from './styles/MenuWrapper';
 import { Button } from '../Button';
-import { Avatar } from '../Avatar';
+import Avatar from '../../Avatar';
+import Nome from '../../Nome';
 
 const links = [
   {
@@ -22,12 +23,8 @@ export default function Menu() {
   return (
     <MenuWrapper>
       <MenuWrapper.LeftSide>
-        <Avatar>
-          <img src="../../../../public/images/avatarbranco75.png" alt=""/>
-        </Avatar>
-        <div>
-          diogo malfatti
-        </div>
+        <Avatar />
+        <Nome />
       </MenuWrapper.LeftSide>
       <MenuWrapper.CentralSide> 
         {links.map((link) => {

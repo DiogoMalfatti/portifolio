@@ -15,6 +15,8 @@ MenuWrapper.LeftSide = styled.div`
   padding: 0;
 	margin: 0;
 	order: 1;
+	display: flex;
+	border: 1px solid red;
 `;
 
 MenuWrapper.CentralSide = styled.div`
