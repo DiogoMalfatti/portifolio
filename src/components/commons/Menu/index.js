@@ -1,8 +1,8 @@
 import React from 'react';
 import { MenuWrapper } from './styles/MenuWrapper';
 import { Button } from '../Button';
-import Avatar from '../../Avatar';
-import Nome from '../../Nome';
+import Text from '../../foundation/Text';
+import Logotipo from '../Logotipo';
 
 const links = [
   {
@@ -23,16 +23,15 @@ export default function Menu() {
   return (
     <MenuWrapper>
       <MenuWrapper.LeftSide>
-        <Avatar />
-        <Nome />
+        <Logotipo />
       </MenuWrapper.LeftSide>
       <MenuWrapper.CentralSide> 
         {links.map((link) => {
           return (
             <li key={link.url}>
-              <a href={link.url} alt="">
+              <Text variant="smallestException" tag="a" href={link.url} alt="">
                 {link.texto}
-              </a>
+              </Text>
             </li>
           )
         })}
